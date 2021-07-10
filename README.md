@@ -2,6 +2,7 @@ Daniel Mason Savvy Coders' Homework Repo
 
 I am currently the first international, Canadian student to be enrolled the Savvy Coders' Full Stack Web Development Bootcamp.
 This is a repo, I've created to upload any and all homework that I've completed from week to week.
+
 My Goals for this course are to;
 1)learn more about myself as a developer within a team and on my own.
 2)become more proficient in the world of scrum while using an agile workflow as opposed to a waterfall methodology.
