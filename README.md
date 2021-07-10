@@ -1,29 +1,15 @@
-# Savvy Coders Project Boilerplate Starter Kit
+Daniel Mason Savvy Coders' Homework Repo
 
-## Overview
-
-This template repository contains several opinionated, 'starter' files and settings to help Savvy Coder students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
-
-In addition to a '.gitignore' and some VS Code specific extensions and settings, it includes the 'recommended' settings for:
-
-1. [ESLint](eslint.org)
-2. [Stylelint](stylelint.io)
-3. [Prettier](prettier.io)
-
-## Get Started
-
-**First and foremost,** make sure that your local machine is set up with all of the 'dev environment tooling' as per the instructions in the curriculum.
-
-Well, after establishing your directory structure on your local machine, (e.g. '~/Code/SavvyCoders'), clone the Savvy Starter Repo - essentially, there should be a button that says **Use this template.**
-
-> [Read more about using templates on GitHub here...](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
-
-Once this repo has been created on your GitHub, you can click on the button to 'clone' it as usual.
-
-Once it's `clone`d to your local machine, `cd` into the directory and **be sure to do:** `npm i` to get all of the dependencies installed. If you see any _errors_ (warnings are OK) on Windows, you may have to do `npm install`.
-
-Now, enter `code .` to open this project in VS Code, and look for a prompt to 'install some extensions' once inside VS Code (in the bottom `right` of your screen). You should install these.
-
-In your repo, feel free to update this README and make any other initial changes to files, etc. Then go ahead and do your usual `git` steps -- add, commit, and push.
-
-**Note:** This is a template repository, no need to 'fork it.
+I am currently the first international, Canadian student to be enrolled the Savvy Coders' Full Stack Web Development Bootcamp.
+This is a repo, I've created to upload any and all homework that I've completed from week to week.
+My Goals for this course are to;
+1)learn more about myself as a developer within a team and on my own.
+2)become more proficient in the world of scrum while using an agile workflow as opposed to a waterfall methodology.
+3)have more of a comprehensive understanding of the fundamentals when it comes to git, github, JS, HTML, CSS, the M.E.R.N web development stack and everything else this bootcamp has to offer.
+4)develop the proper habits going forward when it comes to using git and github with respect updating my own personal project, the capstone project while in this bootcamp, and anything that I end up working in the future.
+5) learn how to work a as developer/scrum master within a team setting while using agile methodologies.
+6) ease some of my own imposter syndrome.
+7) become more comfortable on camera from class to class.
+8) learn how to my work life balance.
+9) unlearn all the bad habit I've picked up over the past year and half of self-learning.
+10) have fun, while doing all of the above and making the most of it.
