@@ -38,8 +38,3 @@
  };
  servePizza(pizza);
  preparePizza(pizza);
-
-
- // Call each function and (starting with preparePizza) use the returned value from the previous function as its input
- // Add, commit, and push your JS file to your GitHub repo.
- // Send your TA a link to your GitHub Homework repo when f
