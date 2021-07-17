@@ -1,0 +1,73 @@
+/* Global selectors */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: #fffffa;
+    text-decoration: none;
+}
+
+
+/* Nav bar */
+
+.main-header {
+    background: #247b7b;
+    color: #fff;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo {
+    flex: 2 1 40rem;
+    font-family: 'Qahiri', sans-serif;
+    font-weight: 400;
+}
