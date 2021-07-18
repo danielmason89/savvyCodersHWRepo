@@ -19,6 +19,15 @@ h1 {
     font-size: 2.6rem;
 }
 
+li,
+ul,
+button,
+label,
+input,
+p {
+    font-size: 2rem;
+}
+
 h2 {
     font-size: 4.8rem;
 }
@@ -88,7 +97,7 @@ nav ul {
 
 #logo {
     flex: 2 1 40rem;
-    font-family: 'Otomanopee One', sans-serif;
+    font-family: 'Indie Flower', cursive;
     font-weight: 300;
     font-size: -1rem;
 }
@@ -113,7 +122,7 @@ nav ul {
 
 #menu {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/new-york-page.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("./img/marcus-ganahl-W5qgKZj-qnk-unsplash.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -122,15 +131,23 @@ nav ul {
     overflow: hidden;
 }
 
+.menu {
+    font-family: 'Indie Flower', cursive;
+    list-style: none;
+    padding: 1rem 10rem;
+    font-size: 20rem;
+}
+
 .menu-header {
     width: 90%;
     margin: auto;
 }
 
-.locations-header h2 {
-    padding: 1rem 0rem;
+.menu-header h2 {
+    padding: 0rem 10rem 29.5rem 10rem;
     text-decoration: underline;
     text-decoration-thickness: 0.5rem;
+    font-family: 'Indie Flower', cursive;
 }
 
 
