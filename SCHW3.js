@@ -1,40 +1,45 @@
- let pizzaToppings = ["pineapple", "olives", "ghostPeppers", "jalapenos"];
- let orderSize = ["small", "medium", "large"];
- let orderCrust = ["thin", "thick"];
- let greet = function greetCustomer() {
+ const pizzaToppings = ["pineapple", "olives", "ghostPeppers", "jalapenos"];
+
+ function greetCustomer() {
      let welcomeGreet = `Welcome to Dominos', our topping are `
      for (let pizzaTopping of pizzaToppings) {
          welcomeGreet += `${pizzaTopping}, `
      }
      console.log(welcomeGreet);
  };
- greet();
+ greetCustomer();
+
 
  function getPizzaOrder(size, crust, ...toppings) {
-     let pizzaOrder = `One ${orderSize} ${orderCrust} pizza with  ${toppings}, ... coming up!`
+     let pizzaOrder = `One ${size} ${crust} crust pizza with `
      for (let topping of toppings) {
-         pizzaOrder += `${topping}`
+         pizzaOrder += `${topping},`
      }
-     return [orderSize, orderCrust, toppings];
-     console.log(pizzaOrder);
+     console.log(`${pizzaOrder} ... coming up!`);
+     return [size, crust, toppings];
  };
- getPizzaOrder();
 
- let takeOrder = getPizzaOrder(orderSize, orderCrust, "pineapple", "olives", "ghostPeppers", "jalapenos");
+
+ let takeOrder = getPizzaOrder("small", "explosive cheese", pizzaToppings);
 
  function preparePizza([orderSize, orderCrust, orderToppings]) {
+     console.log(`...can you smell what the rock is cooking...`)
      return {
-         small: orderSize,
-         thin: orderCrust,
-         ["pineapple", "olives", "ghostPeppers", "jalapenos"]: orderToppings
+         size: orderSize,
+         crust: orderCrust,
+         toppings: orderToppings
      };
-     console.log(`...Cooking pizza...`)
  };
- let finishedPizza = preparePizza(takeOrder);
 
+ let cookedPizza = preparePizza(takeOrder)
 
  function servePizza(pizza) {
-     console.log(`Order up! Here's your ${orderSize} ${orderCrust} pizza with ${orderToppings} ... Enjoy!"`);
+     let orderReady = `Order up! Here's your ${pizza.size} ${pizza.crust} pizza with `;
+     for (let topping of pizza.toppings) {
+         orderReady += `${topping},`
+     }
+     console.log(`${orderReady}.... Enjoy!`)
+     return pizza
  };
- servePizza(pizza);
- preparePizza(pizza);
+
+ servePizza(cookedPizza);

@@ -33,16 +33,34 @@ h5 {
 }
 
 a {
-    color: #fffffa;
+    color: #ffff;
     text-decoration: none;
+}
+
+button {
+    padding: 2rem 6rem;
+    background: #2398aa;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+    background: #0f4c55;
+}
+
+button:focus {
+    background: #141e29;
 }
 
 
 /* Nav bar */
 
 .main-header {
-    background: #247b7b;
-    color: #fff;
+    background: #387780;
+    color: rgba(22, 18, 18, 0.63);
     position: sticky;
     top: 0px;
     z-index: 3;
@@ -64,10 +82,83 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 #logo {
     flex: 2 1 40rem;
-    font-family: 'Qahiri', sans-serif;
-    font-weight: 400;
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: 300;
+    font-size: -1rem;
+}
+
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(#DBD4D3, transparent), url('./img/nrd-1ZOZyhfSvfs-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3 {
+    padding: 4rem;
+}
+
+#menu {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("../img/new-york-page.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-header {
+    width: 90%;
+    margin: auto;
+}
+
+.locations-header h2 {
+    padding: 1rem 0rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+
+
+/* footer section */
+
+footer {
+    color: white;
+    background: #136f7e;
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+footer h5 {
+    flex: 1 1 40rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
 }
