@@ -1,29 +1,28 @@
- const pizzaToppings = ["pineapple", "olives", "ghostPeppers", "jalapenos"];
+ const toppings = ["pineapple", "olives", "ghostPeppers", "jalapenos"];
 
- function greetCustomer() {
+ function greetCustomer(pizzaToppings) {
      let welcomeGreet = `Welcome to Dominos', our topping are `
      for (let pizzaTopping of pizzaToppings) {
          welcomeGreet += `${pizzaTopping}, `
      }
      console.log(welcomeGreet);
  };
- greetCustomer();
-
+ greetCustomer(toppings);
 
  function getPizzaOrder(size, crust, ...toppings) {
      let pizzaOrder = `One ${size} ${crust} crust pizza with `
      for (let topping of toppings) {
-         pizzaOrder += `${topping},`
+         pizzaOrder += `${toppings},`
      }
      console.log(`${pizzaOrder} ... coming up!`);
      return [size, crust, toppings];
  };
 
+ let takeOrder = getPizzaOrder("small", "explosive cheese", toppings);
 
- let takeOrder = getPizzaOrder("small", "explosive cheese", pizzaToppings);
-
- function preparePizza([orderSize, orderCrust, orderToppings]) {
+ function preparePizza(takeOrder) {
      console.log(`...can you smell what the rock is cooking...`)
+
      return {
          size: orderSize,
          crust: orderCrust,
