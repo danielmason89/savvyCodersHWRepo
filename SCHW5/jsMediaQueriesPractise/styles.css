@@ -36,17 +36,46 @@ div {
     width: auto;
 }
 
-@media (min-width: 360) and (max-width: 380) {
-    #bio ul {
-        display: flex;
-        justify-content: center;
+@media (min-device-width: 375px) and (max-device-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-    img {
-        height: 100%;
+    html {
+        font-size: 62.5%;
+        /* padding: 1rem;
+        margin: 5rem 5rem; */
     }
     div {
-        border: 2px solid burlywood;
-        margin: 10px;
+        padding: 0rem 0 2rem 0;
+        font-size: 1.3rem;
     }
-    a {}
+    img {
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+    a {
+        padding: 0.25rem 1rem 0.25rem 0;
+        background-size: cover;
+        text-align: center;
+    }
+    #introPic {
+        float: left;
+    }
+    #bio {
+        display: flex;
+        flex-direction: row;
+        float: right;
+        padding: 2rem 0 0rem 0;
+        list-style: none;
+        font-size: 1.2rem;
+    }
+    #bio>li {
+        padding: 2rem 0 1.2rem 2rem;
+    }
+    #pro {
+        width: auto;
+    }
 }
